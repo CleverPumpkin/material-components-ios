@@ -1738,6 +1738,20 @@ Pod::Spec.new do |mdc|
     end
   end
 
+  # TextControls+UnderlinedTextAreas
+
+  mdc.subspec "TextControls+UnderlinedTextAreas" do |component|
+    component.public_header_files = "components/#{component.base_name.split('+')[0]}/src/#{component.base_name.split('+')[1]}/*.h"
+    component.source_files = [
+      "components/#{component.base_name.split('+')[0]}/src/#{component.base_name.split('+')[1]}/*.{h,m}",
+      "components/#{component.base_name.split('+')[0]}/src/#{component.base_name.split('+')[1]}/private/*.{h,m}"
+    ]
+
+    component.dependency "MaterialComponents/Availability"
+    component.dependency "MaterialComponents/TextControls+BaseTextAreas"
+    component.dependency "MaterialComponents/private/TextControlsPrivate+UnderlinedStyle"
+  end
+
   # TextControls+UnderlinedTextFields
 
   mdc.subspec "TextControls+UnderlinedTextFields" do |component|
