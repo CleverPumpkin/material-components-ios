@@ -25,7 +25,7 @@
 static const CGFloat kUnderlinedContainerStyleUnderlineThicknessNormal = 1.0f;
 static const CGFloat kUnderlinedContainerStyleUnderlineThicknessEditing = 2.0f;
 
-static const CGFloat kUnderlinedFloatingLabelScaleFactor = 0.75f;
+static const CGFloat kUnderlinedFloatingLabelScaleFactor = 0.86f;
 static const CGFloat kUnderlinedHorizontalEdgePaddingDefault = 2;
 
 @interface MDCTextControlStyleUnderlined () <CAAnimationDelegate>
